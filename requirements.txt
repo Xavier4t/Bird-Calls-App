@@ -154,7 +154,6 @@ rsa==4.7.2
 scipy 
 seaborn==0.11.0
 Send2Trash==1.5.0
-sfepy 
 six==1.15.0
 slugify==0.0.1
 snowballstemmer==2.0.0
