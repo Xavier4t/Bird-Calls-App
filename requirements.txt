@@ -131,6 +131,7 @@ pyreadline @ file:///D:/bld/pyreadline_1602253143868/work
 pyrsistent @ file:///C:/ci/pyrsistent_1600123688363/work
 PySocks @ file:///C:/ci/pysocks_1594394709107/work
 python-dateutil==2.8.1
+python-dotenv==0.15.0
 python-jsonrpc-server @ file:///tmp/build/80754af9/python-jsonrpc-server_1600278539111/work
 python-language-server @ file:///tmp/build/80754af9/python-language-server_1600454544709/work
 python-slugify==4.0.1
