@@ -194,7 +194,7 @@ section {
 }
 
 .no-padding-bottom .row, .no-padding-bottom div, .no-padding-bottom.row {
-    padding-bottom: 0;
+    padding-bottom: 1px;
 }
 
 .no-padding-top.row, .no-padding-top div {
