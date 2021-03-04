@@ -329,4 +329,16 @@ h6 {
 }
 
 #mapa {
-     height: 720px; }
+    margin-top: 20px;
+    height: 720px;
+    /* width: 960px; */
+}
+
+.leaflet-control-layers-base { 
+    text-align: left; 
+  }
+
+.leaflet-control-layers-overlays {
+    text-align: left;
+}
+
