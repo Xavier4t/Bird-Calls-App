@@ -100,9 +100,9 @@ function birdFeatures(features) {
         // let file = feature.properties.file;
         let audio = feature.properties.audio;
 
-        layer.bindPopup("<h6>"+ bname + "</h6><hr><br />Scientific Name:&nbsp" + genus + "&nbsp" + species+"<br />Recording time:&nbsp"+ timeStamp +"<br />Location:&nbsp"+ place + "<br />Audio Clip:&nbsphttp:" + audio +"<br>");
+        // layer.bindPopup("<h6>"+ bname + "</h6><hr><br />Scientific Name:&nbsp" + genus + "&nbsp" + species+"<br />Recording time:&nbsp"+ timeStamp +"<br />Location:&nbsp"+ place + "<br />Audio Clip:&nbsp" + audio +"<br>");
 
-        // layer.bindPopup("<h6>"+ bname + "</h6><hr><br />Scientific Name:&nbsp" + genus + "&nbsp" + species+"<br />Recording time:&nbsp"+ timeStamp +"<br />Location:&nbsp"+ place + "<br />Audio:<audio src="+audio_url+"> controls ></audio><br>");
+        layer.bindPopup("<h6>"+ bname + "</h6><hr><br />Scientific Name:&nbsp" + genus + "&nbsp" + species+"<br />Recording time:&nbsp"+ timeStamp +"<br />Location:&nbsp"+ place + "<br /><audio src="+ audio +" controls ></audio><br/>");
     }    
         
     let bird = L.geoJSON(features, {

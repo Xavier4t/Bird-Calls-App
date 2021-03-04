@@ -53,8 +53,10 @@ def createLink(dictio):
     for i in range(len(dictio.features)):
         L1 = dictio.features[i]['properties']['sono']['full']
         L2 = dictio.features[i]['properties']['file-name']
+        separator = '%20'
         lista = L1.split("/")
-        audio_link = "http://"+lista[2]+"/"+lista[3]+"/"+lista[4]+"/"+lista[5]+"/"+L2
+        proto_link = "http://"+lista[2]+"/"+lista[3]+"/"+lista[4]+"/"+lista[5]+"/"+L2
+        audio_link = proto_link.replace(" ", separator)       
         dictio.features[i]['properties']['audio'] = audio_link
     for i in range(len(dictio.features)):
         dictio.features[i]['properties'].pop('sono', None)
