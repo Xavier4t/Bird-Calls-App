@@ -12,7 +12,7 @@ const cardinal_url = "/api/Northern_Cardinal";
 const ruby_ulr = "/api/Ruby-crowned_Kinglet";
 
 
-var url_Array = [goldfinch_url, robin_url, barn_url, jay_url, grey_url, chick_url,wren_url,cedar_url,cardinal_url, ruby_ulr];
+var url_Array = [goldfinch_url, robin_url, barn_url, grey_url, jay_url, chick_url,wren_url,cedar_url,cardinal_url, ruby_ulr];
 
 
 // Map layers
@@ -59,17 +59,16 @@ var greenIcon = new L.Icon({
 
 function drawMap(feat_1, feat_2, feat_3, feat_4, feat_5, feat_6, feat_7,feat_8, feat_9, feat_10) {
     let overlayMaps = {
-        "<span style='color:red'>American Goldfinch</span>": feat_1,
-        // "American Goldfinch": feat_1,
-        "American Robin": feat_2,
-        "Barn Swallow": feat_3,
-        "Blue Jay": feat_4,
-        "Blue-grey Gnatcatche": feat_5,
-        "Carolina Chickadee": feat_6,
-        "Carolina Wren": feat_7,
-        "Cedar Waxwing": feat_8,
-        "Northern Cardinal": feat_9,
-        "Ruby-crowned Kinglet": feat_10
+        "<span style='color:BlueViolet'>American Goldfinch</span>": feat_1,
+        "<span style='color:Chocolate'>American Robin</span>": feat_2,
+        "<span style='color:CadetBlue'>Barn Swallow</span>": feat_3,
+        "<span style='color:DarkGray'>Blue-grey Gnatcatcher</span>": feat_4,
+        "<span style='color:Darkblue'>Blue Jay</span>": feat_5,
+        "<span style='color:Black'>Carolina Chickadee</span>": feat_6,
+        "<span style='color:DarkGoldenRod'>Carolina Wren</span>": feat_7,
+        "<span style='color:Coral'>Cedar Waxwing</span>": feat_8,
+        "<span style='color:DarkRed'>Northern Cardinal</span>": feat_9,
+        "<span style='color:DarkSlateGray'>Ruby-crowned Kinglet</span>": feat_10
 
 
 
