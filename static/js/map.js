@@ -84,24 +84,6 @@ function drawMap(feat_1, feat_2, feat_3, feat_4, feat_5, feat_6, feat_7,feat_8, 
 
 }
 
-// function drawMap1(feat) {
-//     let overlayMaps = {
-//         "bird": feat
-//     };
-//     L.control.layers({"bird": feat}, {collapsed: true}).addTo(myMap);
-
-// }
-
-// function baseMaps(mapLayers){
-//     let baseMaps = {
-//         "Street": mapLayers[0],
-//         "Dark": mapLayers[1],
-//         "Satellite": mapLayers[2]
-//     }; 
-//     L.control.layers(baseMaps).addTo(myMap);
-
-// }
-
 
 var myStyle = {
     "color": "red"
@@ -110,7 +92,7 @@ var myStyle = {
 function birdFeatures(features) {
     function onEachBird(feature, layer) {
         let country = feature.properties.cnt;
-        let timeStamp = new Date(feature.properties.time);
+        let timeStamp = new Date(feature.properties.date);
         let bname = feature.properties.en;
         let place = feature.properties.loc;
         let genus = feature.properties.gen;
