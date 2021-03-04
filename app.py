@@ -36,7 +36,7 @@ def birdData(data, birdID):
                 datalist.append(temp)
     return datalist
 
-
+# Create geoJSON
 pathlist=[]
 for file in jsonFiles:
     path=path_constructor(jsonFolder, file)
@@ -49,9 +49,20 @@ for path, bird in zip(pathlist,birdList):
     blist=birdData(data, birdID)
     birdDict[bird]=blist
 
-    
+def createLink(dictio):
+    for i in range(len(dictio.features)):
+        L1 = dictio.features[i]['properties']['sono']['full']
+        L2 = dictio.features[i]['properties']['file-name']
+        lista = L1.split("/")
+        audio_link = "http://"+lista[2]+"/"+lista[3]+"/"+lista[4]+"/"+lista[5]+"/"+L2
+        dictio.features[i]['properties']['audio'] = audio_link
+    for i in range(len(dictio.features)):
+        dictio.features[i]['properties'].pop('sono', None)
+        dictio.features[i]['properties'].pop('file-name', None)
+        
 def geoBird(chickList):
-    bird_keys = ['id', 'en', 'gen', 'sp', 'cnt','loc', 'file', 'date']
+    bird_keys = ['id', 'en', 'gen', 'sp', 'cnt','loc', 'date', 'file', 'file-name', "sono"]
+    clip_prop = []
     properties=[]
     coordinates = []
     geo = []
@@ -61,16 +72,16 @@ def geoBird(chickList):
         lat = chickList[i]["lat"]        
         lng = chickList[i]["lng"]
         if lat != None and lng != None:
-            coordinates.append((float(lng),float(lat)))   
-            
+            coordinates.append((float(lng),float(lat)))
+        
     for pt, prop in zip(coordinates, properties):
         mypoint=Point(pt)
         geo.append(Feature(properties=prop, geometry=mypoint))
     
     feature_collection=FeatureCollection(geo)
+    createLink(feature_collection)
 
     return feature_collection
-
 
 geojsonData={}
 for k in birdDict.keys():

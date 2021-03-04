@@ -97,10 +97,10 @@ function birdFeatures(features) {
         let place = feature.properties.loc;
         let genus = feature.properties.gen;
         let species = feature.properties.sp;
-        let file = feature.properties.file;
-        let audio_url = "http:"+file;
+        // let file = feature.properties.file;
+        let audio = feature.properties.audio;
 
-        layer.bindPopup("<h6>"+ bname + "</h6><hr><br />Scientific Name:&nbsp" + genus + "&nbsp" + species+"<br />Recording time:&nbsp"+ timeStamp +"<br />Location:&nbsp"+ place + "<br />Audio Clip:&nbsphttp:" + file +"<br>");
+        layer.bindPopup("<h6>"+ bname + "</h6><hr><br />Scientific Name:&nbsp" + genus + "&nbsp" + species+"<br />Recording time:&nbsp"+ timeStamp +"<br />Location:&nbsp"+ place + "<br />Audio Clip:&nbsphttp:" + audio +"<br>");
 
         // layer.bindPopup("<h6>"+ bname + "</h6><hr><br />Scientific Name:&nbsp" + genus + "&nbsp" + species+"<br />Recording time:&nbsp"+ timeStamp +"<br />Location:&nbsp"+ place + "<br />Audio:<audio src="+audio_url+"> controls ></audio><br>");
     }    
