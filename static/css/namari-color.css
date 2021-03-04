@@ -342,3 +342,21 @@ h6 {
     text-align: left;
 }
 
+.section-heading2 h4:before {
+    background: #d2b356;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.section-heading2 h4:after {
+    background: #d2b356;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+}

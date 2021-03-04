@@ -106,22 +106,25 @@
                                     <a href="#banner">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#about">The Project</a>
+                                    <a href="#theproject">The Project</a>
                                 </li>
                                 <li>
                                     <a href="#gallery">The Birds</a>
                                 </li>
                                 <li>
-                                    <a href="#services">The Data</a>
+                                    <a href="#thedata">The Data</a>
                                 </li>
                                 <li>
-                                    <a href="#testimonials">The Features</a>
+                                    <a href="#thefeatures">The Features</a>
                                 </li>
                                 <li>
                                     <a href="#clients">The Model</a>
                                 </li>
                                 <li>
-                                    <a href="#pricing">Further Analysis</a>
+                                    <a href="#theresults">The Results</a>
+                                </li>
+                                <li>
+                                    <a href="#furtheranalysis">Further Analysis</a>
                                 </li>
                             </ul>
                         </nav>
@@ -152,7 +155,7 @@
         <main id="content">
 
             <!--Introduction-->
-            <section id="about" class="introduction scrollto">
+            <section id="theproject" class="introduction scrollto">
 
                 <div class="row clearfix">
 
@@ -169,9 +172,9 @@
                         <!--Icon Block-->
                         <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
                             <!--Icon-->
-                            <div class="icon">
+                            <!-- <div class="icon">
                                 <i class="fa fa-html5 fa-2x"></i>
-                            </div>
+                            </div> -->
                             <!--Icon Block Description-->
                             <div class="icon-block-description">
                                 <h4>The Idea</h4>
@@ -184,9 +187,9 @@
                         <!--Icon Block-->
                         <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
                             <!--Icon-->
-                            <div class="icon">
+                            <!-- <div class="icon">
                                 <i class="fa fa-bolt fa-2x"></i>
-                            </div>
+                            </div> -->
                             <!--Icon Block Description-->
                             <div class="icon-block-description">
                                 <h4>The Challenge</h4>
@@ -200,9 +203,9 @@
                         <!--Icon Block-->
                         <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
                             <!--Icon-->
-                            <div class="icon">
+                            <!-- <div class="icon">
                                 <i class="fa fa-tablet fa-2x"></i>
-                            </div>
+                            </div> -->
                             <!--Icon Block Description-->
                             <div class="icon-block-description">
                                 <h4>The Data</h4>
@@ -214,9 +217,9 @@
                         <!--Icon Block-->
                         <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
                             <!--Icon-->
-                            <div class="icon">
-                                <i class="fa fa-rocket fa-2x"></i>
-                            </div>
+                            <!-- <div class="icon">
+                                <i class="fas fa-kiwi-bird fa-2x"></i>
+                            </div> -->
                             <!--Icon Block Description-->
                             <div class="icon-block-description">
                                 <h4>The Birds</h4>
@@ -251,29 +254,15 @@
 
 
             <!--Content Section-->
-            <div id="services" class="scrollto clearfix">
+            <div id="thedata" class="scrollto clearfix">
 
                 <div class="row no-padding-bottom clearfix">
 
-
-                    <!--Content Left Side-->
-                    <!-- <div class="col-3">
-                    
-                        <blockquote class="testimonial text-right bigtest">
-                            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut              labore                             et dolore magna aliqua</q>
-                            <footer>— John Doe, Happy Customer</footer>
-                        </blockquote>
-                
-
-                    </div> -->
-                    <!--End Content Left Side-->
-
-                    <!--Content of the Right Side-->
                     <div class="col-1">
                         <div class="section-heading">
                             <h3>The Data<Datal></Datal></h3>
                             <h2 class="section-title">Bird recording locations.</h2>
-                            <p class="section-subtitle">Make the bird sing</p>
+                            <p class="section-subtitle">All the audio data used for the analysis</p>
                         </div>
 
                         <div class="col-1" id='mapa'>
@@ -290,7 +279,7 @@
             <!--End of Content Section-->
             
             <!--Testimonials-->
-            <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+            <aside id="thefeatures" class="scrollto text-center" data-enllax-ratio=".2">
 
                 <div class="row clearfix">
 
@@ -301,32 +290,32 @@
 
                     <!--User Testimonial-->
                     <blockquote class="col-4 testimonial classic">
-                        <img src="../static/images/features-images/American_Goldfinch_XC175254.png" alt="User"/>
-                        <q>Description of the signal</q>
+                        <img src="../static/images/spectral-examples/Mono_American_Goldfinch.png" alt="User"/>
+                        <q>Raw mono and downsampled audio signal (first 10 seconds)</q>
                         <footer>Raw Signal</footer>
                     </blockquote>
                     <!-- End of Testimonial-->
                     <!--User Testimonial-->
                     <blockquote class="col-4 testimonial classic">
-                        <img src="../static/images/features-images/American_Goldfinch_XC175254.png" alt="User"/>
-                        <q>Description of the signal</q>
-                        <footer>FEQ</footer>
+                        <img src="../static/images/spectral-examples/Feq_American_Goldfinch.png" alt="User"/>
+                        <q>Short-time Fourier transform (STFT) spectrogram</q>
+                        <footer>STFT spectrogram</footer>
                     </blockquote>
                     <!-- End of Testimonial-->
 
                     <!--User Testimonial-->
                     <blockquote class="col-4 testimonial classic">
-                        <img src="../static/images/features-images/Barn_Swallow_XC191149.png" alt="User"/>
-                        <q>Description of the signal</q>
-                        <footer>Mel spectrogram</footer>
+                        <img src="../static/images/spectral-examples/MEL_American_Goldfinch.png" alt="User"/>
+                        <q>Frequencies converted to the Mel scale</q>
+                        <footer>Mel Spectrogram</footer>
                     </blockquote>
                     <!-- End of Testimonial-->
 
                     <!--User Testimonial-->
                     <blockquote class="col-4 testimonial classic">
-                        <img src="../static/images/features-images/Carolina_Wren_XC168620.png" alt="User"/>
-                        <q>Description of the signal</q>
-                        <footer>MFCC spectrogram</footer>
+                        <img src="../static/images/spectral-examples/MFCC_American_Goldfinch.png" alt="User"/>
+                        <q>Mel-Frequency Cepstrum Spectrogram (MFCC)</q>
+                        <footer>MFCC Spectrogram</footer>
                     </blockquote>
                     <!-- End of Testimonial-->
 
@@ -344,7 +333,18 @@
                         <div class="section-heading">
                             <h3>THE MODEL</h3>
                             <h2 class="section-title">The CNN Model</h2>
-                            <p class="section-subtitle">Description of the Convolutional Neural Network use</p>
+                            <p class="section-subtitle">The convolutional neural network (CNN), is a specialized type of neural network model designed for working with two-dimensional image data, 
+                                although they can be used with one-dimensional and three-dimensional data.<br>
+                                <P class="section-subtitle">2D convolution layer: This layer creates a convolution kernel that is convolved with the layer input to produce a tensor of outputs.</P>
+                                <P class="section-subtitle">Max pooling operation for 2D spatial data: downsamples the input representation by taking the maximum value over the window defined by pool_size for each dimension along the features axis.</P>
+                                <p class="section-subtitle">Regular densely-connected NN layer with relu activation function</p>
+                                <p class="section-subtitle">Regular densely-connected NN layer with softmax activation function</p>
+                                <p class="section-subtitle">Compile the model with in optimazer that implements the Adam algorithm</p>
+                                <p class="section-subtitle">Generate the weight class</p>
+                                <p class="section-subtitle">Feed the training and test sets to the model. Compare accuracy between train, test and validation set</p>
+
+
+                            </p>
                         </div>
 
                     </div>
@@ -353,31 +353,31 @@
 
                         <a href="#" class="col-3">
                             <img src="../static/images/cnn-images/neural_network-logo.png" alt="Company"/>
-                            <div class="client-overlay"><span>The CNN</span></div>
-                        </a>
-                        <a href="#" class="col-3">
-                            <img src="../static/images/cnn-images/neural_network-logo.png" alt="Company"/>
-                            <div class="client-overlay"><span>Filters</span></div>
-                        </a>
-                        <a href="#" class="col-3">
-                            <img src="../static/images/cnn-images/neural_network-logo.png" alt="Company"/>
-                            <div class="client-overlay"><span>Feature Maps</span></div>
-                        </a>
-                        <a href="#" class="col-3">
-                            <img src="../static/images/cnn-images/neural_network-logo.png" alt="Company"/>
-                            <div class="client-overlay"><span>Zero Padding</span></div>
+                            <div class="client-overlay"><span>Keras Sequential Model</span></div>
                         </a>
                         <a href="#" class="col-3">
                             <img src="../static/images/cnn-images/2dcnn-logo.png" alt="Company"/>
-                            <div class="client-overlay"><span>2D Convolutional Layers</span></div>
+                            <div class="client-overlay"><span>2D Convolutional Layer</span></div>
                         </a>
                         <a href="#" class="col-3">
-                            <img src="../static/images/cnn-images/layers-logo.png" alt="Company"/>
-                            <div class="client-overlay"><span>Pooling Layers</span></div>
+                            <img src="../static/images/cnn-images/2dcnn-logo.png" alt="Company"/>
+                            <div class="client-overlay"><span>2D Convolutional Layer</span></div>
                         </a>
                         <a href="#" class="col-3">
-                            <img src="../static/images/cnn-images/neural_network-logo.png" alt="Company"/>
-                            <div class="client-overlay"><span>Fully Connected Layer</span></div>
+                            <img src="../static/images/cnn-images/MaxpoolSample2_bwt.png" alt="Company"/>
+                            <div class="client-overlay"><span>Max Pooling 2D</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="../static/images/cnn-images/relu-logo.png" alt="Company"/>
+                            <div class="client-overlay"><span>Densily-connected NN layer<br>Activation: relu</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="../static/images/cnn-images/softmax.png" alt="Company"/>
+                            <div class="client-overlay"><span>Densily-connected NN layer<br>Activation: softmax</span></div>
+                        </a>
+                        <a href="#" class="col-3">
+                            <img src="../static/images/cnn-images/adam.png" alt="Company"/>
+                            <div class="client-overlay"><span>Configures the model for training<br>Adam optimization</span></div>
                         </a>
                         <a href="#" class="col-3">
                             <img src="../static/images/cnn-images/weight-logo.png" alt="Company"/>
@@ -385,8 +385,8 @@
                         </a>
 
                         <a href="#" class="col-3">
-                            <img src="../static/images/cnn-images/relu-logo.png" alt="Company"/>
-                            <div class="client-overlay"><span>relu</span></div>
+                            <img src="../static/images/cnn-images/SET.png" alt="Company"/>
+                            <div class="client-overlay"><span>Training set<br>Test set<br>Validation set</span></div>
                         </a>
 
                     </div>
@@ -394,9 +394,32 @@
                 </div>
             </section>
             <!--End of Clients-->
+            <section id="theresults" class="scrollto clearfix">
+                <div class="row clearfix">
+                    <div class="col-1">
+                        <div class="section-heading">
+                            <h3>THE RESULTS</h3>
+                            <h2 class="section-title">Accuracy</h2>
+                            <p class="section-subtitle">Training Accuracy:  0.54142</p>
+                            <p class="section-subtitle">Testing Accuracy:  0.57277</p>
+                            <p class="section-subtitle">Validating Accuracy:  0.51564</p>
+                            
+                        </div>
+                        <div class="section-heading2">
+                            <h4 class="section-title">Improving accuracy</h4>
+                            <p class="section-subtitle">Regenerate the datasets by:</p>
+                            <p class="section-subtitle">Cleaning the audio signal (increase the noise threshold)</p>
+                            <p class="section-subtitle">Increase the duration of the signal to analyze.</p>
+                            <p class="section-subtitle">Splitting the signal in different ways (smaller clips, clip overlapped, etc.)</p>
+                            <p class="section-subtitle">Train the model with other spectral features and compare results.</p>
+                        </div>
+
+                    </div>
+
+            </section>
 
             <!--Start Tables-->
-            <section id="pricing" class="secondary-color text-center scrollto clearfix ">
+            <section id="furtheranalysis" class="secondary-color text-center scrollto clearfix ">
                 <div class="row clearfix">
 
                     <div class="section-heading">
@@ -455,7 +478,7 @@
         <footer id="landing-footer" class="clearfix">
             <div class="row clearfix">
 
-                <p id="copyright" class="col-2">Atlanta, March 4, 2020 <a href="">Francisco J. Perez</a></p>
+                <p id="copyright" class="col-2">Francisco J. Perez.<a href="https://github.com/Xavier4t"> Atlanta, March 4, 2020</a></p>
 
                 <!--Social Icons in Footer-->
                 <ul class="col-2 social-icons">

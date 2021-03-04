@@ -936,7 +936,7 @@ blockquote {
 
 .testimonial img {
     max-height: 120px;
-    border-radius: 250em;
+    /* border-radius: 250em; */
 }
 
 .testimonial footer {
@@ -2326,7 +2326,4 @@ blockquote {
     }
 
 }
-
-
-
 
