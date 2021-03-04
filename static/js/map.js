@@ -45,7 +45,7 @@ var satelliteMap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/
 });
 
 var mapLayers = [streetMap, darkMap, satelliteMap];
-var center = [38, -100];
+var center = [38, -98];
 var myMap = L.map("mapa", {layers: mapLayers}).setView(center,4);
 
 var greenIcon = new L.Icon({
@@ -59,16 +59,16 @@ var greenIcon = new L.Icon({
 
 function drawMap(feat_1, feat_2, feat_3, feat_4, feat_5, feat_6, feat_7,feat_8, feat_9, feat_10) {
     let overlayMaps = {
-        "<span style='color:BlueViolet'>American Goldfinch</span>": feat_1,
-        "<span style='color:Chocolate'>American Robin</span>": feat_2,
-        "<span style='color:CadetBlue'>Barn Swallow</span>": feat_3,
-        "<span style='color:DarkGray'>Blue-grey Gnatcatcher</span>": feat_4,
-        "<span style='color:Darkblue'>Blue Jay</span>": feat_5,
+        "<span style='color:Black'>American Goldfinch</span>": feat_1,
+        "<span style='color:Black'>American Robin</span>": feat_2,
+        "<span style='color:Black'>Barn Swallow</span>": feat_3,
+        "<span style='color:Black'>Blue-grey Gnatcatcher</span>": feat_4,
+        "<span style='color:Black'>Blue Jay</span>": feat_5,
         "<span style='color:Black'>Carolina Chickadee</span>": feat_6,
-        "<span style='color:DarkGoldenRod'>Carolina Wren</span>": feat_7,
-        "<span style='color:Coral'>Cedar Waxwing</span>": feat_8,
-        "<span style='color:DarkRed'>Northern Cardinal</span>": feat_9,
-        "<span style='color:DarkSlateGray'>Ruby-crowned Kinglet</span>": feat_10
+        "<span style='color:Black'>Carolina Wren</span>": feat_7,
+        "<span style='color:Black'>Cedar Waxwing</span>": feat_8,
+        "<span style='color:Black'>Northern Cardinal</span>": feat_9,
+        "<span style='color:Black'>Ruby-crowned Kinglet</span>": feat_10
 
 
 
