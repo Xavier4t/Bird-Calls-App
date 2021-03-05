@@ -64,7 +64,6 @@ def createLink(dictio):
         
 def geoBird(chickList):
     bird_keys = ['id', 'en', 'gen', 'sp', 'cnt','loc', 'date', 'file', 'file-name', "sono"]
-    clip_prop = []
     properties=[]
     coordinates = []
     geo = []
