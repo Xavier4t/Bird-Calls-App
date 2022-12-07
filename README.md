@@ -2,7 +2,7 @@
 
 A sort of attempt to learn Convolutional Neural Networks.
 
-- Heroku deployment: [Bird Classifier](https://birdcalls.herokuapp.com/)
+- Deployment: Heroku deployment has been cancelled, new deployment with updated code coming soon.
 
 - Data acquisition, preparation and CNN: [Bird Classifier repo](https://github.com/Xavier4t/Bird-Classifier)
 
